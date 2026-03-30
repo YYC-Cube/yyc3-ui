@@ -18,6 +18,8 @@ jobs:
     if: ${{ github.repository_owner == 'YYC-Cube' }}
     name: Create a PR for release workflow
     runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: --max-old-space-size=4096
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3

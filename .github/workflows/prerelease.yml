@@ -20,6 +20,8 @@ jobs:
     name: Build & Publish a beta release to NPM
     runs-on: ubuntu-latest
     environment: Preview
+    env:
+      NODE_OPTIONS: --max-old-space-size=4096
 
     steps:
       - name: Checkout Repo

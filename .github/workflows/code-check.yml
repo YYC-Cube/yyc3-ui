@@ -79,9 +79,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build packages
-        run: pnpm --filter=yyc3-ui build
-
       - run: pnpm format:check
 
   tsc:
@@ -117,8 +114,5 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
         run: pnpm install
-
-      - name: Build packages
-        run: pnpm --filter=yyc3-ui build
 
       - run: pnpm typecheck
