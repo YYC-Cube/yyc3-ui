@@ -34,6 +34,7 @@
     "sync:templates": "./scripts/sync-templates.sh \"templates/*\"",
     "check": "turbo lint typecheck format:check",
     "check:quick": "./scripts/quick-check.sh",
+    "check:commit": "./scripts/pre-commit-check.sh",
     "check:full": "./scripts/smart-check.sh",
     "check:verify": "./scripts/quick-verify.sh",
     "check:ci": "./scripts/ci-check.sh",
