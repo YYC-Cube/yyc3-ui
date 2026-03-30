@@ -46,7 +46,8 @@
     "test:dev": "turbo run test --filter=!yyc3-ui --force",
     "test": "start-server-and-test v4:dev http://localhost:4000 test:dev",
     "validate:registries": "pnpm --filter=v4 validate:registries",
-    "test:apps": "pnpm --filter=v4 test:apps"
+    "test:apps": "pnpm --filter=v4 test:apps",
+    "prepare": "husky"
   },
   "packageManager": "pnpm@9.0.6",
   "dependencies": {
