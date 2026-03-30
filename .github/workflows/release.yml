@@ -14,7 +14,8 @@ permissions:
 
 jobs:
   release:
-    if: ${{ github.repository_owner == 'shadcn-ui' }}
+    # 调整条件：允许 YYC-Cube 组织发布
+    if: ${{ github.repository_owner == 'YYC-Cube' }}
     name: Create a PR for release workflow
     runs-on: ubuntu-latest
     steps:
