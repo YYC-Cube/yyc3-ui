@@ -47,17 +47,19 @@ jobs:
       # - name: Check for errors
       #   run: pnpm check
 
-      - name: Build the package
-        run: pnpm shadcn:build
+      # - name: Build packages
+      #   run: pnpm shadcn:build
+      # 临时禁用构建步骤以避免内存不足问题
+      # TODO: 实施单独的 DTS 构建 workflow 后恢复此步骤
 
-      - name: Create Version PR or Publish to NPM
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          commit: "chore(release): version packages"
-          title: "chore(release): version packages"
-          version: node .github/changeset-version.js
-          publish: npx changeset publish
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_ENV: "production"
+      # - name: Create Version PR or Publish to NPM
+      #   id: changesets
+      #   uses: changesets/action@v1
+      #   with:
+      #     commit: "chore(release): version packages"
+      #     title: "chore(release): version packages"
+      #     version: node .github/changeset-version.js
+      #     publish: npx changeset publish
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NODE_ENV: "production"
