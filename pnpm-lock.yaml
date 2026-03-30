@@ -112,6 +112,9 @@ importers:
       '@types/react-dom':
         specifier: 19.2.2
         version: 19.2.2(@types/react@19.2.2)
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       start-server-and-test:
         specifier: ^2.1.5
         version: 2.1.5
@@ -449,7 +452,7 @@ importers:
         version: 4.1.5
       msw:
         specifier: ^2.10.4
-        version: 2.10.4(@types/node@25.5.0)(typescript@5.9.2)
+        version: 2.10.4(@types/node@20.19.37)(typescript@5.9.2)
       node-fetch:
         specifier: ^3.3.2
         version: 3.3.2
@@ -5483,6 +5486,11 @@ packages:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
     engines: {node: '>=18.18.0'}
 
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   iconv-lite@0.7.2:
     resolution: {integrity: sha512-im9DjEDQ55s9fL4EYzOAv0yMqmMBSZp6G0VvFyTMPKWxiSBHUj9NW/qqLmXUwXrrM7AvqSlTCfvqRb0cM8yYqw==}
     engines: {node: '>=0.10.0'}
@@ -9584,14 +9592,6 @@ snapshots:
       '@inquirer/type': 3.0.8(@types/node@20.19.37)
     optionalDependencies:
       '@types/node': 20.19.37
-    optional: true
-
-  '@inquirer/confirm@5.1.14(@types/node@25.5.0)':
-    dependencies:
-      '@inquirer/core': 10.1.15(@types/node@25.5.0)
-      '@inquirer/type': 3.0.8(@types/node@25.5.0)
-    optionalDependencies:
-      '@types/node': 25.5.0
 
   '@inquirer/core@10.1.15(@types/node@20.19.10)':
     dependencies:
@@ -9619,20 +9619,6 @@ snapshots:
       yoctocolors-cjs: 2.1.2
     optionalDependencies:
       '@types/node': 20.19.37
-    optional: true
-
-  '@inquirer/core@10.1.15(@types/node@25.5.0)':
-    dependencies:
-      '@inquirer/figures': 1.0.13
-      '@inquirer/type': 3.0.8(@types/node@25.5.0)
-      ansi-escapes: 4.3.2
-      cli-width: 4.1.0
-      mute-stream: 2.0.0
-      signal-exit: 4.1.0
-      wrap-ansi: 6.2.0
-      yoctocolors-cjs: 2.1.2
-    optionalDependencies:
-      '@types/node': 25.5.0
 
   '@inquirer/external-editor@1.0.3(@types/node@20.19.37)':
     dependencies:
@@ -9651,11 +9637,6 @@ snapshots:
   '@inquirer/type@3.0.8(@types/node@20.19.37)':
     optionalDependencies:
       '@types/node': 20.19.37
-    optional: true
-
-  '@inquirer/type@3.0.8(@types/node@25.5.0)':
-    optionalDependencies:
-      '@types/node': 25.5.0
 
   '@isaacs/balanced-match@4.0.1': {}
 
@@ -13934,6 +13915,8 @@ snapshots:
 
   human-signals@8.0.1: {}
 
+  husky@9.1.7: {}
+
   iconv-lite@0.7.2:
     dependencies:
       safer-buffer: 2.1.2
@@ -14988,6 +14971,31 @@ snapshots:
       - '@types/node'
     optional: true
 
+  msw@2.10.4(@types/node@20.19.37)(typescript@5.9.2):
+    dependencies:
+      '@bundled-es-modules/cookie': 2.0.1
+      '@bundled-es-modules/statuses': 1.0.1
+      '@bundled-es-modules/tough-cookie': 0.1.6
+      '@inquirer/confirm': 5.1.14(@types/node@20.19.37)
+      '@mswjs/interceptors': 0.39.5
+      '@open-draft/deferred-promise': 2.2.0
+      '@open-draft/until': 2.1.0
+      '@types/cookie': 0.6.0
+      '@types/statuses': 2.0.6
+      graphql: 16.11.0
+      headers-polyfill: 4.0.3
+      is-node-process: 1.2.0
+      outvariant: 1.4.3
+      path-to-regexp: 6.3.0
+      picocolors: 1.1.1
+      strict-event-emitter: 0.5.1
+      type-fest: 4.41.0
+      yargs: 17.7.2
+    optionalDependencies:
+      typescript: 5.9.2
+    transitivePeerDependencies:
+      - '@types/node'
+
   msw@2.10.4(@types/node@20.19.37)(typescript@5.9.3):
     dependencies:
       '@bundled-es-modules/cookie': 2.0.1
@@ -15013,31 +15021,6 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
     optional: true
-
-  msw@2.10.4(@types/node@25.5.0)(typescript@5.9.2):
-    dependencies:
-      '@bundled-es-modules/cookie': 2.0.1
-      '@bundled-es-modules/statuses': 1.0.1
-      '@bundled-es-modules/tough-cookie': 0.1.6
-      '@inquirer/confirm': 5.1.14(@types/node@25.5.0)
-      '@mswjs/interceptors': 0.39.5
-      '@open-draft/deferred-promise': 2.2.0
-      '@open-draft/until': 2.1.0
-      '@types/cookie': 0.6.0
-      '@types/statuses': 2.0.6
-      graphql: 16.11.0
-      headers-polyfill: 4.0.3
-      is-node-process: 1.2.0
-      outvariant: 1.4.3
-      path-to-regexp: 6.3.0
-      picocolors: 1.1.1
-      strict-event-emitter: 0.5.1
-      type-fest: 4.41.0
-      yargs: 17.7.2
-    optionalDependencies:
-      typescript: 5.9.2
-    transitivePeerDependencies:
-      - '@types/node'
 
   mute-stream@2.0.0: {}
 
@@ -17131,7 +17114,7 @@ snapshots:
 
   vite-tsconfig-paths@4.3.2(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@1.21.7)(lightningcss@1.30.2)(tsx@4.21.0)(yaml@2.8.1)):
     dependencies:
-      debug: 4.4.3
+      debug: 4.4.1
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@5.9.3)
     optionalDependencies:
