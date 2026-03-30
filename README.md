@@ -8,6 +8,23 @@
 
 🚀 **YYC3-UI** - 基于 shadcn/ui 的高质量 React 组件库，配备智能检测系统和自动化 CI/CD。
 
+## 📝 项目说明
+
+本项目是 [shadcn/ui](https://github.com/shadcn-ui/ui) 的 **衍生作品 (Derivative Work)**。
+
+- **原始项目**: [shadcn/ui](https://github.com/shadcn-ui/ui) 由 [@shadcn](https://github.com/shadcn) 开发
+- **授权方式**: 原项目采用 MIT License 开源，本项目继承并保持 MIT License
+- **项目定位**: 在原项目基础上进行定制化开发和功能扩展，同时保持开源精神
+- **版权声明**: 保留原作者版权声明，新增内容同样采用 MIT License
+
+### 主要改进和扩展
+
+✅ **保持原项目优势**: 基于 Radix UI 和 Tailwind CSS 的高质量组件
+🔧 **新增智能检测**: 自动代码质量检测和修复系统
+🚀 **完善 CI/CD**: 自动化测试、构建和发布流程
+📚 **扩展文档**: 丰富的使用示例和开发指南
+🎯 **新增功能**: MCP 服务器集成、智能推送检测等
+
 ## ✨ 特性
 
 - 🎨 **精美组件** - 基于 Radix UI 和 Tailwind CSS 的高质量组件
@@ -315,9 +332,27 @@ export default defineConfig({
 
 本项目基于 [MIT](./LICENSE.md) 许可证开源。
 
+### 开源合规说明
+
+✅ **合规使用**: 本项目严格遵守 MIT License 条款使用 shadcn/ui
+✅ **保持开源**: 本项目继续采用 MIT License，确保持续的开放性
+✅ **版权归属**: 保留原作者版权声明，详见 [LICENSE.md](./LICENSE.md)
+
+本项目感谢 shadcn/ui 提供的优秀基础，并承诺持续开源，为社区贡献力量。
+
 ## 🙏 致谢
 
-- [shadcn/ui](https://github.com/shadcn-ui/ui) - 原始项目
+### 原始项目
+
+本项目基于以下开源项目开发：
+
+- 🎨 **[shadcn/ui](https://github.com/shadcn-ui/ui)** - 原始组件库，由 [@shadcn](https://github.com/shadcn) 开发
+  - 提供了高质量的 React 组件基础
+  - MIT License 授权，允许自由使用和修改
+  - 本项目在此基础上进行了定制化开发
+
+### 技术支持
+
 - [Radix UI](https://www.radix-ui.com/) - 无障碍组件库
 - [Tailwind CSS](https://tailwindcss.com/) - CSS 框架
 - [Vercel](https://vercel.com/) - 部署平台
