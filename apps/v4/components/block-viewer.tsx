@@ -20,7 +20,7 @@ import { type PanelImperativeHandle } from "react-resizable-panels"
 import {
   type registryItemFileSchema,
   type registryItemSchema,
-} from "shadcn/schema"
+} from "yyc3-ui/schema"
 import { type z } from "zod"
 
 import { trackEvent } from "@/lib/events"

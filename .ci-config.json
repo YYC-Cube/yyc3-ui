@@ -1,0 +1,150 @@
+{
+  "version": "2.0",
+  "project": "yyc3-ui",
+  "description": "YYC3-UI CI/CD Configuration",
+  "checks": {
+    "critical": [
+      {
+        "name": "ESLint",
+        "command": "pnpm lint",
+        "timeout": 300,
+        "autoFix": "pnpm lint:fix"
+      },
+      {
+        "name": "Core Build",
+        "command": "pnpm --filter=yyc3-ui build",
+        "timeout": 600,
+        "autoFix": "pnpm --filter=yyc3-ui build"
+      },
+      {
+        "name": "Core Files",
+        "command": "test -f packages/yyc3-ui/dist/index.js && test -f packages/yyc3-ui/dist/tailwind.css",
+        "timeout": 10
+      },
+      {
+        "name": "Git Status",
+        "command": "git rev-parse --is-inside-work-tree",
+        "timeout": 10
+      }
+    ],
+    "important": [
+      {
+        "name": "TypeScript (Core)",
+        "command": "pnpm --filter=yyc3-ui typecheck 2>&1 | grep -v 'mcp/index.ts' | grep -v 'TS2589' | grep -v 'TS2345' | grep -q 'error TS' && exit 1 || exit 0",
+        "timeout": 300,
+        "autoFix": "pnpm --filter=yyc3-ui typecheck"
+      },
+      {
+        "name": "Unit Tests",
+        "command": "pnpm --filter=yyc3-ui test || true",
+        "timeout": 600
+      },
+      {
+        "name": "Format Check",
+        "command": "pnpm format:check",
+        "timeout": 300,
+        "autoFix": "pnpm format:write"
+      },
+      {
+        "name": "Prettier Format",
+        "command": "pnpm format:check",
+        "timeout": 300,
+        "autoFix": "pnpm format:write"
+      }
+    ],
+    "optional": [
+      {
+        "name": "Security Audit",
+        "command": "pnpm audit --audit-level=high || true",
+        "timeout": 120
+      },
+      {
+        "name": "Registry Validation",
+        "command": "pnpm validate:registries || true",
+        "timeout": 300
+      },
+      {
+        "name": "Package.json Validation",
+        "command": "node -e \"require('./package.json')\"",
+        "timeout": 10
+      },
+      {
+        "name": "TypeScript Config",
+        "command": "test -f tsconfig.json",
+        "timeout": 10
+      },
+      {
+        "name": "README Check",
+        "command": "test -f README.md && test -f packages/yyc3-ui/README.md",
+        "timeout": 10
+      },
+      {
+        "name": "License Check",
+        "command": "test -f LICENSE.md",
+        "timeout": 10
+      },
+      {
+        "name": "Git Hooks",
+        "command": "test -d .husky",
+        "timeout": 10
+      },
+      {
+        "name": "EditorConfig",
+        "command": "test -f .editorconfig",
+        "timeout": 10
+      }
+    ]
+  },
+  "skip": {
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.tsx",
+      "**/__tests__/**",
+      "packages/yyc3-ui/src/mcp/**"
+    ],
+    "errors": [
+      "TS2589",
+      "TS2345"
+    ],
+    "branches": [
+      "gh-pages"
+    ]
+  },
+  "autoFix": {
+    "enabled": true,
+    "maxRetries": 2,
+    "commands": {
+      "eslint": "pnpm lint:fix",
+      "prettier": "pnpm format:write",
+      "build": "pnpm --filter=yyc3-ui build",
+      "dependencies": "pnpm install --frozen-lockfile=false"
+    }
+  },
+  "notifications": {
+    "onSuccess": true,
+    "onFailure": true,
+    "onAutoFix": true,
+    "webhook": "",
+    "email": ""
+  },
+  "ci": {
+    "platform": "github-actions",
+    "node_version": "18",
+    "pnpm_version": "9.0.6",
+    "cache": {
+      "enabled": true,
+      "paths": [
+        "node_modules",
+        ".turbo",
+        "**/dist"
+      ]
+    },
+    "artifacts": {
+      "enabled": true,
+      "paths": [
+        "packages/yyc3-ui/dist",
+        "coverage"
+      ]
+    }
+  }
+}

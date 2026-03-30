@@ -1,4 +1,4 @@
-import { registryItemSchema, type Registry } from "shadcn/schema"
+import { registryItemSchema, type Registry } from "yyc3-ui/schema"
 import { z } from "zod"
 
 import { themes } from "../_legacy-themes"
@@ -23,7 +23,7 @@ const DEPRECATED_ITEMS = [
 const NEW_YORK_V4_STYLE = {
   type: "registry:style",
   dependencies: ["class-variance-authority", "lucide-react", "radix-ui"],
-  devDependencies: ["tw-animate-css", "shadcn"],
+  devDependencies: ["tw-animate-css", "yyc3-ui"],
   registryDependencies: ["utils"],
   css: {
     '@import "tw-animate-css"': {},
@@ -42,7 +42,7 @@ const NEW_YORK_V4_STYLE = {
 }
 
 export const registry = {
-  name: "shadcn/ui",
+  name: "yyc3/ui",
   homepage: "https://ui.shadcn.com",
   items: z.array(registryItemSchema).parse(
     [

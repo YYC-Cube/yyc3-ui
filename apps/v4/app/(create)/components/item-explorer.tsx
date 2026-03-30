@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { ChevronRightIcon } from "lucide-react"
-import { type RegistryItem } from "shadcn/schema"
+import { type RegistryItem } from "yyc3-ui/schema"
 
 import { cn } from "@/lib/utils"
 import { type Base } from "@/registry/bases"

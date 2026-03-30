@@ -1,4 +1,4 @@
-import { type RegistryItem } from "shadcn/schema"
+import { type RegistryItem } from "yyc3-ui/schema"
 
 import { FONT_DEFINITIONS, type FontDefinition } from "@/lib/font-definitions"
 

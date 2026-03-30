@@ -38,7 +38,7 @@ packages
 | `apps/v4/components` | The React components for the website.    |
 | `apps/v4/content`    | The content for the website.             |
 | `apps/v4/registry`   | The registry for the components.         |
-| `packages/shadcn`    | The `shadcn` package.                    |
+| `packages/yyc3-ui`   | The `yyc3-ui` package.                   |
 
 ## Development
 
@@ -178,9 +178,9 @@ If you have a request for a new component, please open a discussion on GitHub. W
 
 ## CLI
 
-The `shadcn` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://ui.shadcn.com/docs/cli).
+The `yyc3-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://ui.shadcn.com/docs/cli).
 
-Any changes to the CLI should be made in the `packages/shadcn` directory. If you can, it would be great if you could add tests for your changes.
+Any changes to the CLI should be made in the `packages/yyc3-ui` directory. If you can, it would be great if you could add tests for your changes.
 
 ## Testing
 

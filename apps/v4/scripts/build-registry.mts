@@ -5,13 +5,13 @@ import { availableParallelism } from "os"
 import path from "path"
 import prettier from "prettier"
 import { rimraf } from "rimraf"
-import { registrySchema, type RegistryItem } from "shadcn/schema"
+import { registrySchema, type RegistryItem } from "yyc3-ui/schema"
 import {
   createStyleMap,
   transformDirection,
   transformIcons,
   transformStyle,
-} from "shadcn/utils"
+} from "yyc3-ui/utils"
 import { Project, ScriptKind } from "ts-morph"
 
 import { getAllBlocks } from "@/lib/blocks"
@@ -834,7 +834,7 @@ async function buildRegistry(styleName: string) {
     const proc = spawn(
       "node",
       [
-        "../../packages/shadcn/dist/index.js",
+        "../../packages/yyc3-ui/dist/index.js",
         "build",
         `registry-${styleName}.json`,
         "--output",

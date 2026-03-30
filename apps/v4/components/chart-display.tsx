@@ -1,5 +1,5 @@
 import * as React from "react"
-import { type registryItemSchema } from "shadcn/schema"
+import { type registryItemSchema } from "yyc3-ui/schema"
 import { type z } from "zod"
 
 import { highlightCode } from "@/lib/highlight-code"

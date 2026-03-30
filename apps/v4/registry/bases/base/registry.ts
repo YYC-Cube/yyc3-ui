@@ -1,4 +1,4 @@
-import { registryItemSchema, type Registry } from "shadcn/schema"
+import { registryItemSchema, type Registry } from "yyc3-ui/schema"
 import { z } from "zod"
 
 import { fonts } from "@/registry/fonts"
@@ -15,7 +15,7 @@ import { ui } from "./ui/_registry"
 const BASE_STYLE = {
   type: "registry:style",
   dependencies: ["class-variance-authority", "lucide-react", "@base-ui/react"],
-  devDependencies: ["tw-animate-css", "shadcn"],
+  devDependencies: ["tw-animate-css", "yyc3-ui"],
   registryDependencies: ["utils"],
   css: {
     '@import "tw-animate-css"': {},
@@ -34,7 +34,7 @@ const BASE_STYLE = {
 }
 
 export const registry = {
-  name: "shadcn/ui",
+  name: "yyc3/ui",
   homepage: "https://ui.shadcn.com",
   items: z.array(registryItemSchema).parse([
     {

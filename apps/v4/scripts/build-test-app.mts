@@ -2,7 +2,7 @@
  * Build Test Apps Script
  *
  * This script populates the ui-test-apps repository with components and examples
- * from the shadcn/ui registry for testing different style configurations.
+ * from the yyc3/ui registry for testing different style configurations.
  *
  * Prerequisites:
  *   1. Clone the test apps repo: git clone https://github.com/shadcn-ui/ui-test-apps
@@ -40,12 +40,12 @@
 import { promises as fs } from "fs"
 import path from "path"
 import { rimraf } from "rimraf"
-import { registrySchema } from "shadcn/schema"
+import { registrySchema } from "yyc3-ui/schema"
 import {
   createStyleMap,
   transformIcons,
   transformStyle,
-} from "shadcn/utils"
+} from "yyc3-ui/utils"
 import { Project, ScriptKind } from "ts-morph"
 
 import { BASES, type Base } from "@/registry/bases"

@@ -1,11 +1,11 @@
 {
-  "name": "shadcn/ui",
+  "name": "yyc3/ui",
   "homepage": "https://ui.shadcn.com",
   "items": [
     {
       "name": "index",
       "dependencies": ["class-variance-authority", "lucide-react", "radix-ui"],
-      "devDependencies": ["tw-animate-css", "shadcn"],
+      "devDependencies": ["tw-animate-css", "yyc3-ui"],
       "registryDependencies": ["utils"],
       "files": [],
       "cssVars": {},
@@ -26,7 +26,7 @@
     {
       "name": "style",
       "dependencies": ["class-variance-authority", "lucide-react", "radix-ui"],
-      "devDependencies": ["tw-animate-css", "shadcn"],
+      "devDependencies": ["tw-animate-css", "yyc3-ui"],
       "registryDependencies": ["utils"],
       "files": [],
       "cssVars": {},

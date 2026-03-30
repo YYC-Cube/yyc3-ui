@@ -1,4 +1,4 @@
-import { decodePreset, isPresetCode } from "shadcn/preset"
+import { decodePreset, isPresetCode } from "yyc3-ui/preset"
 
 import {
   designSystemConfigSchema,

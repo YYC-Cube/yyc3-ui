@@ -1,6 +1,6 @@
 import "server-only"
 
-import { registryItemSchema } from "shadcn/schema"
+import { registryItemSchema } from "yyc3-ui/schema"
 
 import { BASES, getThemesForBaseColor, type BaseName } from "@/registry/config"
 import {

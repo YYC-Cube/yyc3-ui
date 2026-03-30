@@ -12,7 +12,7 @@ const translations: Translations = {
   en: {
     dir: "ltr",
     values: {
-      title: "shadcn/ui",
+      title: "yyc3/ui",
       subtitle: "The Foundation for your Design System",
       description:
         "A set of beautifully designed components that you can customize, extend, and build on.",
@@ -21,7 +21,7 @@ const translations: Translations = {
   ar: {
     dir: "rtl",
     values: {
-      title: "shadcn/ui",
+      title: "yyc3/ui",
       subtitle: "الأساس لنظام التصميم الخاص بك",
       description:
         "مجموعة من المكونات المصممة بشكل جميل يمكنك تخصيصها وتوسيعها والبناء عليها.",
@@ -30,7 +30,7 @@ const translations: Translations = {
   he: {
     dir: "rtl",
     values: {
-      title: "shadcn/ui",
+      title: "yyc3/ui",
       subtitle: "הבסיס למערכת העיצוב שלך",
       description:
         "סט של רכיבים מעוצבים בצורה יפה שאתה יכול להתאים אישית, להרחיב ולבנות עליהם.",

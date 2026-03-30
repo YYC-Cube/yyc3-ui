@@ -1,5 +1,5 @@
 {
-  "name": "shadcn",
+  "name": "yyc3-ui",
   "version": "4.1.1",
   "description": "Add components to your apps.",
   "publishConfig": {
@@ -7,13 +7,13 @@
   },
   "license": "MIT",
   "author": {
-    "name": "shadcn",
-    "url": "https://twitter.com/shadcn"
+    "name": "YYC-Cube",
+    "url": "https://github.com/YYC-Cube"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shadcn-ui/ui.git",
-    "directory": "packages/shadcn"
+    "url": "https://github.com/YYC-Cube/yyc3-ui.git",
+    "directory": "packages/yyc3-ui"
   },
   "files": [
     "dist"

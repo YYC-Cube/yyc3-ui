@@ -1,4 +1,4 @@
-import { type RegistryItem } from "shadcn/schema"
+import { type RegistryItem } from "yyc3-ui/schema"
 
 const mapping = {
   "registry:block": "Blocks",

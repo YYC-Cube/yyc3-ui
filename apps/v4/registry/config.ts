@@ -2,7 +2,7 @@ import {
   iconLibraries,
   type IconLibrary,
   type IconLibraryName,
-} from "shadcn/icons"
+} from "yyc3-ui/icons"
 import { z } from "zod"
 
 import { BASE_COLORS, type BaseColor } from "@/registry/base-colors"

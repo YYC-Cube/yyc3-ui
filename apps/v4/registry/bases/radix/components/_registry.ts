@@ -1,4 +1,4 @@
-import { type Registry } from "shadcn/schema"
+import { type Registry } from "yyc3-ui/schema"
 
 export const components: Registry["items"] = [
   {

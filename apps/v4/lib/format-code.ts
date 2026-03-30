@@ -6,7 +6,7 @@ import {
   transformMenu,
   transformRender,
   transformStyle,
-} from "shadcn/utils"
+} from "yyc3-ui/utils"
 import { Project, ScriptKind, type SourceFile } from "ts-morph"
 
 import { BASES } from "@/registry/bases"

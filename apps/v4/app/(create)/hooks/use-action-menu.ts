@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { type RegistryItem } from "shadcn/schema"
+import { type RegistryItem } from "yyc3-ui/schema"
 import useSWR from "swr"
 
 import { useDesignSystemSearchParams } from "@/app/(create)/lib/search-params"

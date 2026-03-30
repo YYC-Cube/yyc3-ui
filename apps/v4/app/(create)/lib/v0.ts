@@ -4,13 +4,13 @@ import {
   registryItemSchema,
   type configSchema,
   type RegistryItem,
-} from "shadcn/schema"
+} from "yyc3-ui/schema"
 import {
   transformFont,
   transformIcons,
   transformMenu,
   transformRender,
-} from "shadcn/utils"
+} from "yyc3-ui/utils"
 import { Project, ScriptKind, type SourceFile } from "ts-morph"
 import { z } from "zod"
 

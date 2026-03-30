@@ -84,7 +84,7 @@ describe("defaultScaffold", () => {
       "1",
       "--filter=blob:none",
       "--sparse",
-      "https://github.com/shadcn-ui/ui.git",
+      "https://github.com/YYC-Cube/yyc3-ui.git",
       expect.stringContaining("shadcn-template-"),
     ])
 

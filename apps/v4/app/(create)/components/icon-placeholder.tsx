@@ -2,7 +2,7 @@
 
 import { lazy, Suspense } from "react"
 import { SquareIcon } from "lucide-react"
-import type { IconLibraryName } from "shadcn/icons"
+import type { IconLibraryName } from "yyc3-ui/icons"
 
 import { useDesignSystemSearchParams } from "@/app/(create)/lib/search-params"
 

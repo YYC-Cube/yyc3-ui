@@ -1,4 +1,4 @@
-import { encodePreset, type PresetConfig } from "shadcn/preset"
+import { encodePreset, type PresetConfig } from "yyc3-ui/preset"
 
 import { type DesignSystemConfig } from "@/registry/config"
 

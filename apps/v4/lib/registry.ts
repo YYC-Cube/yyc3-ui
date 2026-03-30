@@ -2,7 +2,7 @@ import { promises as fs } from "fs"
 import path from "path"
 import { ExamplesIndex } from "@/examples/__index__"
 import { LRUCache } from "lru-cache"
-import { registryItemSchema, type registryItemFileSchema } from "shadcn/schema"
+import { registryItemSchema, type registryItemFileSchema } from "yyc3-ui/schema"
 import { type z } from "zod"
 
 import { readFileFromRoot } from "@/lib/read-file"
