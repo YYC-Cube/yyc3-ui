@@ -46,5 +46,4 @@ tsconfig.tsbuildinfo
 shadcn-workspace
 .codex-artifacts
 
-# Temporary ignore workflows (OAuth permission issue)
-.github/workflows/*.yml
+
