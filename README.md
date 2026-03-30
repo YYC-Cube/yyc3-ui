@@ -1,6 +1,6 @@
 # YYC3-UI
 
-[![CI](https://github.com/YYC-Cube/yyc3-ui/workflows/CI/badge.svg)](https://github.com/YYC-Cube/yyc3-ui/actions/workflows/code-check.yml)
+[![Code check](https://github.com/YYC-Cube/yyc3-ui/workflows/Code%20check/badge.svg)](https://github.com/YYC-Cube/yyc3-ui/actions/workflows/code-check.yml)
 [![Test](https://github.com/YYC-Cube/yyc3-ui/workflows/Test/badge.svg)](https://github.com/YYC-Cube/yyc3-ui/actions/workflows/test.yml)
 [![Release](https://github.com/YYC-Cube/yyc3-ui/workflows/Release/badge.svg)](https://github.com/YYC-Cube/yyc3-ui/actions/workflows/release.yml)
 [![npm version](https://badge.fury.io/js/yyc3-ui.svg)](https://badge.fury.io/js/yyc3-ui)
